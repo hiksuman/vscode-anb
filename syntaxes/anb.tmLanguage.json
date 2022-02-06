@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "AnB",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#arrow"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#goals"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "invalid.anb",
+				"match": "\\s*(Protocol|Types|Knowledge|where|Actions|Goals)(:?)"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "support.class.anb",
+				"match": "\\s*(Agent|Number|Function|Symmetric_key|PublicKey)(:?)"
+			}]
+		},
+		"goals": {
+			"patterns": [{
+				"name": "entity.name.function.anb",
+				"match": "\\s*(authenticates|on|secrecy|of|secret|between)(:?)"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.block.anb",
+				"match": "\\s*#.+$|#"
+			}]
+		},
+		"arrow": {
+			"patterns": [{
+				"name": "string.anb",
+				"match": "\\s*->*"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+					"name": "variable.anb",
+					"match": "[a-z][a-zA-Z0-9]*|[0-9]+(?:;[a-z][a-zA-Z0-9]*|[0-9]+)?"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+					"name": "keyword.control.anb",
+					"match": "[A-Z][a-zA-Z0-9]*(?:;\\b[A-Z][a-zA-Z0-9]+)?"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+					"name": "storage.type.name.anb",
+					"match": "\\s*(exp|inv)"
+			}]
+		}
+	},
+	"scopeName": "source.anb"
+}
