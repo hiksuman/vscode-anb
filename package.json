@@ -3,7 +3,7 @@
     "displayName": "AnB Syntax Highlighter",
     "description": "VS Code syntax highlighting for AnB",
     "icon": "images/icon_transparent.png",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "hiksuman",
     "engines": {
         "vscode": "^1.13.0"
