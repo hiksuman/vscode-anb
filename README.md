@@ -10,7 +10,7 @@ The formal modelling language AnB is used by the [ofmc](http://imm.dtu.dk/~samo/
 
 # Install
 
-From the Releases download the `.vsix` file and add it to VS Code as a local extension or soon possible to install it from VS Code Marketplace.
+From the Releases download the `.vsix` file and add it to VS Code as a local extension or install it from VS Code [Marketplace](https://marketplace.visualstudio.com/items?itemName=hiksuman.vscode-anb).
 
 # Developement
 To create the VS Code Extension file, `vsce package` is needed:
